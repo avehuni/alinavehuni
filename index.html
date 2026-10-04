@@ -721,6 +721,16 @@ section.bg-dark .ab-center{max-width:var(--wrap)}
 section.bg-dark .ab-quote cite{font-size:clamp(14px,1.2vw,17px)}
 section.bg-dark .ab-quote p,section.bg-dark .sp-quote .ab-quote p,section.bg-dark .ab-quote.q-long p,section.bg-dark .sp-quote .ab-quote.q-long p{font-size:clamp(20px,1.75vw,25px);line-height:1.6;max-width:900px}
 section.bg-dark .sp-quote .ab-quote.q-long.q-tanja p{max-width:30em;text-wrap:balance}
+
+/* privacy */
+.pv-body{max-width:760px;margin:0 auto;display:grid;gap:0}
+.pv-body h2{font-family:var(--display);font-weight:400;font-size:var(--t-h3);line-height:1.3;color:var(--ink);margin:1.6em 0 .5em}
+#p-privacy .pg-solo > div{max-width:760px;width:100%;margin:0 auto}
+.pv-body p,.pv-body li{font-size:var(--t-body);line-height:1.75;color:#333;margin:0 0 1em}
+.pv-body ul{margin:0 0 1em;padding-left:1.2em}
+.pv-body li{margin-bottom:.5em}
+.pv-body a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.pv-date{font-size:var(--t-small);letter-spacing:.04em;color:#555;margin-top:18px}
 </style>
 </head>
 <body style="margin:0">
@@ -1250,6 +1260,55 @@ section.bg-dark .sp-quote .ab-quote.q-long.q-tanja p{max-width:30em;text-wrap:ba
   </section>
 </div>
 
+
+<!-- PRIVACY -->
+<div class="page" id="p-privacy">
+  <section class="pg-hero bg-a">
+    <div class="wrap pg-grid pg-solo">
+      <div>
+        <p class="ab-label">Your Privacy</p>
+        <h1 class="pg-title">Privacy Policy</h1>
+        <p class="pv-date">Effective October 4, 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ab bg-b">
+    <div class="wrap">
+      <div class="pv-body">
+        <p>This policy explains how Dr. Alina Vehuni and Wholeness Education handle the personal information you share while visiting alinavehuni.com, so that you can engage with the work, explore the podcast, and reach out with full confidence in how your information is cared for.</p>
+
+        <h2>Information You Share With Me</h2>
+        <p>When you send a message through the contact form, you provide your name, your email address, and, if you choose, your organization, the nature of your inquiry, your event details, and your message. I use this information solely to respond to you, to explore speaking engagements, consulting, podcast collaborations, and partnerships, and to continue the conversation you have started.</p>
+
+        <h2>How Your Message Is Delivered</h2>
+        <p>Messages from the contact form are delivered to my inbox through FormSubmit, a form delivery service that passes your submission along by email. Your message is then kept within my email account for as long as it remains useful to our correspondence.</p>
+
+        <h2>Information Collected Automatically</h2>
+        <p>This website is hosted by Vercel, which, like every web host, records standard technical information such as your IP address, browser type, and the pages requested, in order to deliver the site securely and reliably. The site itself uses no advertising trackers, analytics cookies, or marketing pixels.</p>
+
+        <h2>Embedded Videos and External Links</h2>
+        <p>The podcast page includes videos embedded from YouTube, and when you play one, YouTube may set cookies and collect information according to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>. Links to podcast platforms, social media, and partner organizations such as Wholeness Education, ADLEA, and The Freedom School lead to websites governed by their own privacy policies, which I encourage you to review when you visit them.</p>
+
+        <h2>How Your Information Is Protected</h2>
+        <p>Your information is shared only with the services described above, which make this website and our correspondence possible, and it is never sold, rented, or traded. The site is served over a secure, encrypted connection, and reasonable care is taken to keep your information safe.</p>
+
+        <h2>Your Choices and Rights</h2>
+        <p>You may ask at any time to see the personal information I hold about you, to correct it, or to have it deleted, and I will respond promptly. Depending on where you live, including California and the European Union, you may hold additional rights under laws such as the CCPA and the GDPR, and I am glad to honor them.</p>
+
+        <h2>Children&rsquo;s Privacy</h2>
+        <p>This website is intended for adults, and I do not knowingly collect personal information from children under 13. If you believe a child has shared information through this site, please contact me and it will be removed.</p>
+
+        <h2>Updates to This Policy</h2>
+        <p>This policy may be updated as the website grows, and the effective date above will always reflect the most recent version.</p>
+
+        <h2>Contact</h2>
+        <p>For any question about this policy or your personal information, please write to <a href="mailto:alina@wholenesseducation.com">alina@wholenesseducation.com</a>.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
 <!-- CONTACT -->
 <div class="page" id="p-contact">
   <section class="pg-hero bg-a">
@@ -1319,13 +1378,13 @@ section.bg-dark .sp-quote .ab-quote.q-long.q-tanja p{max-width:30em;text-wrap:ba
         <a href="https://www.youtube.com/@alinavehuni" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4.2" fill="currentColor"/><path d="M10 9v6l5.2-3z" fill="#fff"/></svg></a>
       </nav>
     </div>
-    <div class="foot-legal"><span>© 2026 Dr. Alina Vehuni</span><a href="https://ad98-alina.systeme.io/e3043c6efc-81f9ad45" target="_blank" rel="noopener">Privacy Policy</a></div>
+    <div class="foot-legal"><span>© 2026 Dr. Alina Vehuni</span><a href="#privacy">Privacy Policy</a></div>
   </div>
 </footer>
 
 <script>
 (function(){
-  var pages=['home','about','speaking','podcast','projects','contact'];
+  var pages=['home','about','speaking','podcast','projects','contact','privacy'];
   var top=document.getElementById('top'), btn=document.getElementById('menuBtn');
   function show(){
     var h=(location.hash||'').replace('#','');

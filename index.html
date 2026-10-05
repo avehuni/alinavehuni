@@ -1445,6 +1445,7 @@ section.bg-dark.connect{padding-block:clamp(52px,6vw,84px)}
     if(scrollTo){ setTimeout(function(){scrollTo.scrollIntoView({behavior:'smooth'})},30) } else { window.scrollTo(0,0) }
   }
   window.addEventListener('hashchange',show); show();
+  document.addEventListener('click',function(e){var l=e.target.closest&&e.target.closest('a[href^="#"]');if(!l)return;var h=l.getAttribute('href');if(h===location.hash||(h==='#home'&&!location.hash)){e.preventDefault();if(h!==location.hash)history.replaceState(null,'',h);show();window.scrollTo({top:0,behavior:'smooth'})}});
   btn.addEventListener('click',function(){var o=top.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
 
 

@@ -794,6 +794,10 @@ section.bg-dark.connect{padding-block:clamp(52px,6vw,84px)}
 @media (max-width:820px){.sp-cta-m{display:block;background:#FFFFFF;text-align:center;padding:36px 16px 8px}.sp-cta-m .ab-btn{margin:0}}
 #p-podcast .ep-grid{gap:clamp(36px,4.4vw,64px) clamp(32px,4vw,56px)}
 @media (max-width:640px){#p-podcast .ep-grid{gap:40px}}
+.kit-box{width:100%;margin-top:18px;background:#FFFFFF;border-top:2px solid var(--gold);padding:clamp(24px,3vw,36px);box-shadow:var(--box-shadow)}
+.kit-box .kit-form{margin-top:0}
+.kit-box .kit-done{margin-top:0}
+@media (max-width:760px){.kit-box .kit-done{justify-items:center}}
 </style>
 </head>
 <body style="margin:0">
@@ -917,6 +921,7 @@ section.bg-dark.connect{padding-block:clamp(52px,6vw,84px)}
         <h2 class="ab-h2">The Wholeness Kit</h2>
         <p class="kit-lead">A guide for parents who are ready to go deeper</p>
         <p class="kit-body">Drawn from Parenting for Wholeness™, this guide invites you inward first, toward the presence, honesty, and inner steadiness that allow your child to grow into the fullness of who they already are.</p>
+        <div class="kit-box">
         <form class="kit-form" id="kitForm" novalidate>
           <label class="fld"><span>First Name</span><input id="k-name" name="name" type="text" autocomplete="given-name" required></label>
           <label class="fld"><span>Email</span><input id="k-email" name="email" type="email" autocomplete="email" required></label>
@@ -926,6 +931,7 @@ section.bg-dark.connect{padding-block:clamp(52px,6vw,84px)}
         <div class="kit-done" id="kitDone" hidden>
           <p id="kitThanks">Thank you. Your Wholeness Kit is ready.</p>
           <a class="ab-btn" href="wholeness-kit.pdf" target="_blank" rel="noopener" download="The-Wholeness-Kit-Dr-Alina-Vehuni.pdf">DOWNLOAD THE WHOLENESS KIT</a>
+        </div>
         </div>
       </div>
     </div>

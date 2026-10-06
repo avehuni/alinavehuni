@@ -1573,7 +1573,7 @@ section.bg-dark.connect{padding-block:clamp(52px,6vw,84px)}
     cv.width=W*dpr; cv.height=H*dpr; c.setTransform(dpr,0,0,dpr,0,0);
     var ir=img.getBoundingClientRect(), il=ir.left-r.left, it=ir.top-r.top, iw=ir.width, ih=ir.height, hb=home.getBoundingClientRect().bottom-r.top, P;
     if(W>760){ SZ=22; REST=.93; P=[[-40,hb+60],[W*.42,H*1.02],[il+iw*.35,it+ih*.30],[W+30,H*.06]]; }
-    else { SZ=17; REST=.83; P=[[-30,it+ih*.95],[W*.35,it+ih*1.05],[W*.7,it+ih*.3],[W+30,it+ih*.12]]; }
+    else { SZ=17; REST=.84; P=[[-30,it+ih*.95],[W*.35,it+ih*1.02],[W*.72,it+ih*.18],[W+30,it-ih*.08]]; }
     pts=[]; for(var i=0;i<=N;i++){var t=i/N;pts.push([bez(P[0][0],P[1][0],P[2][0],P[3][0],t),bez(P[0][1],P[1][1],P[2][1],P[3][1],t)])}
   }
   function at(t){var f=Math.max(0,Math.min(N,t*N)),i=Math.floor(f),k=f-i,a=pts[i],b=pts[Math.min(N,i+1)];return [a[0]+(b[0]-a[0])*k,a[1]+(b[1]-a[1])*k]}

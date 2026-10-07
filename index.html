@@ -1566,7 +1566,7 @@ section.bg-dark.connect{padding-block:clamp(52px,6vw,84px)}
   var sec=cv.parentNode, img=sec.querySelector('img'), home=sec.querySelector('.home'), c=cv.getContext('2d');
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var W,H,pts=[],N=500,REST=.93,SZ=22,parts=[],t0=null,last=null,visible=true,running=false;
-  var TRAVEL=4600, FADE=4.5;
+  var TRAVEL=4600, FADE=1.6;
   function bez(a,b,q,d,t){var u=1-t;return u*u*u*a+3*u*u*t*b+3*u*t*t*q+t*t*t*d}
   function layout(){
     var r=sec.getBoundingClientRect(), dpr=Math.min(window.devicePixelRatio||1,2); W=r.width; H=r.height;
